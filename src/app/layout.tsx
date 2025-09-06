@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Not Bad Ads",
   description: "Hand-picked Meta & LinkedIn ads for design & copy inspiration. Curated B2B ads for design & copy inspiration.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "Not Bad Ads",
