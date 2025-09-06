@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const instrumentSerif = Instrument_Serif({ 
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-instrument-serif"
+});
 
 export const metadata: Metadata = {
   title: "Not Bad Ads",
@@ -31,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${instrumentSerif.variable}`}>
         {children}
       </body>
     </html>
